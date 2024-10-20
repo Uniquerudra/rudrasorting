@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:white;
+}
+
+.container {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 10px;
+    align-items: center;
+    width: 200px;
+    height: 300px;
+    background: white;
+}
+
+.stage {
+    display: flex;
+    position: relative;
+    height: 300px;
+    background: #ffdfaf;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: flex-end;
+}
+
+.bar {
+    position: absolute;
+    background: green;
+    transition: all 300ms ease-out;
+    border-radius: 2px;
+}
+
+.bar.activate {
+    background: #ff4f7b; ;
+    animation: upAndDownScale 1.5s ease-in-out;
+}
+
+@keyframes upAndDownScale {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.generate-new {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid yellowgreen;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 18px;
+    font-size: 15px;
+}
+
+.generate-new input {
+    padding: 5px;
+}
+.select-algorithm {
+    display: flex;
+    flex-direction: column;
+    background:palevioletred;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.select-algorithm select {
+    background: #0563af;
+    color: #fff;
+    padding: 2px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.select-algorithm select option {
+    padding: 30px;
+}
+
+
+
+
+button:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+button {
+    background: palevioletred;
+    border-radius: 4px;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    padding: 5px 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #f082ac;
+}
+
+#startBtn {
+    background: palevioletred; 
+}
+
+#startBtn:hover {
+    background: pink; 
+}
+
+#stopBtn {
+    background: palevioletred; 
+}
+
+#stopBtn:hover {
+    background: pink; 
+}
+

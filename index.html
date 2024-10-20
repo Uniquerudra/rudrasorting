@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORTING VISUALIZER</title>
+    <link rel="stylesheet" media="screen" href="styles.css">
+    <script src="scripts.js" type="module" defer></script>
+</head>
+<body>
+    <div class="container"><h6 id="rudra">Hey:Welcome to my Sorting  Visualizer engine.</h6></div>    <div class="container">
+        <div class="sidebar">
+            <select id="selectAlgorithm" class="select-algorithm">
+                <option value="bubbleSort" selected>Bubble Sort</option>
+                <option value="selectionSort">Selection Sort</option>
+                <option value="insertionSort">Insertion Sort</option>
+                <option value="quickSort">Quick Sort</option>
+            </select>
+            <div class="generate-new">
+                <p>Generate New Array</p>
+                <input type="number" id="numbersBars" max="20" min="1" value="10">
+                <button id="generateBtn">New</button>
+            </div>
+            <div class="buttons">
+                <button id="startBtn">Start</button>
+                <button id="stopBtn">Stop</button>
+            </div>
+        </div>
+        <div class="stage" id="stage"></div>
+    </div>
+</body>
+</html>
